@@ -36,14 +36,16 @@ public class IntroToArrayLists {
 		}
 
 		// 5. Print only the even numbered elements in the list.
-		for(int i = 0; i <strings.size(); i++) {
-			if(i%)
+		for (int i = 0; i < strings.size(); i++) {
+			if (i % 2 == 0) {
+				String t = strings.get(i);
+				System.out.println(t);
+
+			}
 		}
-		
-		
 
 		// 6. Print all the Strings in reverse order.
-		for (int i = strings.size()-1; i >= 0; i--) {
+		for (int i = strings.size() - 1; i >= 0; i--) {
 
 			String j = strings.get(i);
 			System.out.println(j);
